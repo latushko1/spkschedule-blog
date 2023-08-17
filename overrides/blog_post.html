@@ -1,3 +1,7 @@
+date_object = parse(date_string)
+formatted_date = date_object.strftime('%B %d, %Y')
+
+
 {% extends "base.html" %}
 
 {% block content %}
@@ -5,7 +9,9 @@
   <p>
     <b>{{ page.meta.description }}</b>
   </p>
-  {% include "partials/blog_metadata.html" %}
+  <p>
+    {{ page.meta.formatted_date }} <!-- Вывод отформатированной даты -->
+  </p>
   <hr>
   {{ page.content }}
 {% endblock %}

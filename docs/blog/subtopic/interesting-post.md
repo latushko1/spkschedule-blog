@@ -2,7 +2,7 @@
 template: blog_post.html
 title: Another Interesting Post
 description: Please enjoy this post.
-date: 2021-10-02
+date: updates-10-02
 ---
 
 Sometimes it's just better not to be seen. That's how Harry had always lived his life. He prided himself as being the fly on the wall and the fae that blended into the crowd. That's why he was so shocked that she noticed him.
