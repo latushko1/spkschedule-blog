@@ -19,12 +19,14 @@
       <hr>
       <!-- Use a hidden p tag to provide a preview -->
       {% if config.extra.blog.extended_preview %}
-        {{ page.content.split("<p hidden>#more</p>", 1)[0] }}
+            <p>
+                {{ page.content.split()[:10]|join(' ') if page.content.split()[:10] else page.content }}
+            </p>
         <a href="{{ page.url|url }}#more">
           <span class="twemoji">
             {% include ".icons/octicons/arrow-right-24.svg" %}
           </span>
-          Continue reading
+          Продолжить чтение
           <hr>
         </a>
       {% endif %}

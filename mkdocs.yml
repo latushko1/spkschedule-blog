@@ -8,11 +8,12 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: index.md
-  - Blog:
+  - Главная: index.md
+  - Блог:
       - blog/index.md
-      - updates:
+      - Обновления:
           - blog/updates/add-teachers.md
+#          - blog/updates/second.md
 #      - Subtopic:
 #          - blog/subtopic/interesting-post.md
 theme:
@@ -25,16 +26,18 @@ theme:
   # Light and Dark Theme Toggle
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
       scheme: slate
-#      primary: red
-#      accent: pink
+      primary: blue grey
+      accent: cyan
       toggle:
         icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: degault
+      primary: cyan
+      accent: pink
+      toggle:
+        icon: material/toggle-switch
         name: Switch to light mode
   features:
     - navigation.instant
