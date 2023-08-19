@@ -26,16 +26,15 @@ theme:
   # Light and Dark Theme Toggle
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: slate
-      primary: blue grey
-      accent: cyan
+      scheme: default
+      primary: cyan
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: degault
-      primary: cyan
-      accent: pink
+      scheme: slate
+      primary: blue grey
+      accent: cyan
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
