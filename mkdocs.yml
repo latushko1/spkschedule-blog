@@ -13,7 +13,7 @@ nav:
       - blog/index.md
       - Обновления:
           - blog/updates/add-teachers.md
-#          - blog/updates/second.md
+          - blog/updates/update-b2.md
 #      - Subtopic:
 #          - blog/subtopic/interesting-post.md
 theme:
@@ -22,19 +22,20 @@ theme:
   font:
     text: Noto Sans
   icon:
-    logo: material/home
+    logo: material/robot
   # Light and Dark Theme Toggle
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: cyan
+      primary: white
+      accent: cyan
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: cyan
+      primary: black
+      accent: indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -80,7 +81,4 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
