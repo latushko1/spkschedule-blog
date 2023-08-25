@@ -29,3 +29,16 @@
 .md-typeset a {
     font-weight:600
 }
+
+.announce-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width:100%
+}
+
+.md-announce__inner{
+display:grid;
+margin:0 auto;
+}

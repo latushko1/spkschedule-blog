@@ -14,8 +14,8 @@ nav:
       - Обновления:
           - blog/updates/add-teachers.md
           - blog/updates/update-b2.md
-#      - Subtopic:
-#          - blog/subtopic/interesting-post.md
+      - Поддержка:
+          - blog/support/index.md
 theme:
   custom_dir: overrides
   name: material
@@ -28,14 +28,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: cyan
+      accent: black
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: orange
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -45,6 +45,7 @@ theme:
     - navigation.tabs
     - toc.integrate
     - header.autohide
+    - announce.dismiss
 
 plugins:
   - search

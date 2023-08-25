@@ -1,5 +1,10 @@
 {% extends "base.html" %}
-
+{% block announce %}
+    <div class="announce-wrapper">
+        <p>Вы также можете поддержать развитие проекта</p>
+        <a href="blog/support/">Поддержка</a>
+    </div>
+{% endblock %}
 {% block content %}
   {{ page.content }}
   {% set blog_posts = [] %}
@@ -20,7 +25,7 @@
       <!-- Use a hidden p tag to provide a preview -->
       {% if config.extra.blog.extended_preview %}
             <p>
-                {{ page.content.split()[:10]|join(' ') if page.content.split()[:10] else page.content }}
+                {{ page.content.split("<p hidden>#more</p>", 1)[0] }}
             </p>
         <a href="{{ page.url|url }}#more">
           <span class="twemoji">
