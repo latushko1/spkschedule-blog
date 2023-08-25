@@ -1,6 +1,6 @@
 ---
 template: blog_post.html
-title: Поддержка
+title: Поддержать
 hide:
   - navigation
   - toc
