@@ -15,8 +15,6 @@ nav:
           - blog/updates/add-teachers.md
           - blog/updates/update-b2.md
           - blog/updates/04-09-update.md
-      - Поддержка:
-          - blog/support/index.md
 theme:
   custom_dir: overrides
   name: material
