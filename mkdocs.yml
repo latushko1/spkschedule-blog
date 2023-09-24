@@ -27,16 +27,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: black
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: orange
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.instant
@@ -44,6 +42,7 @@ theme:
     - navigation.tabs
     - toc.integrate
     - header.autohide
+
 
 plugins:
   - search

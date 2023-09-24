@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+  {% block announce %}
+<p>Вы также можете подписаться на наши социальные сети в <a href="https://t.me/spk55omsk">Телеграм</a> и в <a href="https://vk.com/spkomsk55">Вконтакте</a></p>
+  {% endblock %}
 {% block content %}
   {{ page.content }}
   {% set blog_posts = [] %}
@@ -14,20 +17,5 @@
       <p>
         <b>{{ page.meta.description }}</b>
       </p>
-      {% include "partials/blog_metadata.html" %}
-      <hr>
-      <!-- Use a hidden p tag to provide a preview -->
-      {% if config.extra.blog.extended_preview %}
-            <p>
-                {{ page.content.split("<p hidden>#more</p>", 1)[0] }}
-            </p>
-        <a href="{{ page.url|url }}#more">
-          <span class="twemoji">
-            {% include ".icons/octicons/arrow-right-24.svg" %}
-          </span>
-          Продолжить чтение
-          <hr>
-        </a>
-      {% endif %}
   {% endfor %}
 {% endblock %}
